@@ -20,4 +20,17 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/bin)
 # 添加可执行文件目标
 # 可执行文件名: data_structure
 # 源文件: main.c
-add_executable(data_structure main.c)
+add_executable(
+    data_structure main.c
+    doubly_linked_list/doubly_linked_list.h
+    doubly_linked_list/doubly_linked_list.c
+)
+
+# 添加测试可执行文件目标
+# 可执行文件名: doubly_linked_list_test
+add_executable(
+    doubly_linked_list_test
+    doubly_linked_list/doubly_linked_list_test.c
+    doubly_linked_list/doubly_linked_list.h
+    doubly_linked_list/doubly_linked_list.c
+)

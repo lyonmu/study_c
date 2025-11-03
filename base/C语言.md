@@ -18,4 +18,3 @@ int main() {
 # 创建目录并使用 gcc 命令编译源文件
 mkdir bin && gcc -o bin/main main.c
 ```
-

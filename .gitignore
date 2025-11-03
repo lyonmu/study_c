@@ -15,9 +15,11 @@
 # Editor/IDE
 .idea/
 .vscode/
+.cache
 
 bin/
 dist/
 build/
 dev/
+test/
 .DS_Store
